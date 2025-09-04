@@ -64,5 +64,5 @@ curl -X POST http://localhost:8081/auth/signin \
 ## Миграции базы данных
 Структура миграций:
 src/main/resources/db/migration/
-├── V1__create_tables.sql
-└── V2__insert_test_data.sql
+V1__create_tables.sql
+V2__insert_test_data.sql
