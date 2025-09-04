@@ -48,6 +48,7 @@ docker-compose logs -f kafka
 mvn test
 ## Примеры запросов
 Регистрация пользователя
+```
 curl -X POST http://localhost:8081/auth/signup \
   -H "Content-Type: application/json" \
   -d '{
@@ -57,6 +58,7 @@ curl -X POST http://localhost:8081/auth/signup \
     "firstName": "Test",
     "lastName": "User"
   }'
+```
 Получение JWT токена
 curl -X POST http://localhost:8081/auth/signin \
   -H "Content-Type: application/json" \
