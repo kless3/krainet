@@ -60,9 +60,11 @@ curl -X POST http://localhost:8081/auth/signup \
   }'
 ```
 Получение JWT токена
+```
 curl -X POST http://localhost:8081/auth/signin \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"admin"}'
+```
 ## Миграции базы данных
 Структура миграций:
 src/main/resources/db/migration/
